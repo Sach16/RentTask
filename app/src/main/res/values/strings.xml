@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RentTask</string>
+    <string name="places">Places</string>
     <string name="title_activity_maps1">Map</string>
 </resources>

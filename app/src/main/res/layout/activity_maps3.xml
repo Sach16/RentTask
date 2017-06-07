@@ -13,22 +13,24 @@
         android:background="@color/colorPrimary">
 
         <TextView
+            android:id="@+id/PLACE_TXT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
             android:textSize="22sp"
+            android:singleLine="true"
+            android:maxWidth="200dp"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
             android:textColor="@android:color/white"/>
 
         <ImageView
-            android:id="@+id/LIST_IMG"
+            android:id="@+id/BACK_IMG"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
             android:padding="10dp"
-            android:src="@mipmap/list_loc"/>
+            android:src="@mipmap/back"/>
 
     </RelativeLayout>
 
@@ -40,41 +42,6 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activities.MapsActivity1" />
-
-    <Button
-        android:id="@+id/BTN_GSC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAllCaps="false"
-        android:layout_alignParentBottom="true"
-        android:text="Generate Short Code"
-        android:layout_alignParentRight="true"
-        android:layout_margin="5dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/TOOLBAR"
-        android:layout_margin="5dp">
-
-        <EditText
-            android:id="@+id/ET_LOCATION"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Find Location..."
-            android:layout_weight="0.8" />
-
-        <Button
-            android:id="@+id/BTN_FIND"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Go"
-            android:textAllCaps="false"
-            android:layout_alignParentRight="true"
-            android:layout_weight="0.2"/>
-
-    </LinearLayout>
+        tools:context=".activities.MapsActivity3" />
 
 </RelativeLayout>
